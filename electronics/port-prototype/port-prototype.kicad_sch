@@ -1,0 +1,49 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "179a533d-2a1a-4d6b-b8c8-ecfd6886425c")
+	(paper "A4")
+	(title_block
+		(title "Rack PDU — One-port USB-C PD prototype")
+		(date "2026-10-05")
+		(rev "0.0-concept")
+		(company "CONCEPTUAL — NOT FOR FABRICATION")
+		(comment 1 "No circuit captured until 65 W 5 A cable and sourcing gates pass")
+		(comment 2 "Preliminary architecture: TPS25750D + external adjustable 24 V buck")
+	)
+	(lib_symbols)
+	(text "CONCEPTUAL DESIGN GATE — NOT FOR FABRICATION"
+		(exclude_from_sim no)
+		(at 148.59 31.75 0)
+		(effects
+			(font (size 2.54 2.54) (bold yes))
+			(justify)
+		)
+		(uuid "047f3e45-fc1e-48d4-b1e0-21f385f82a5f")
+	)
+	(text "Target: one independently regulated USB-C PD source port, 65 W maximum.\n\nRequired chain:\n24 V protected input → adjustable synchronous buck → controlled VBUS/OCP/discharge → USB-C receptacle\n                                           ↘ TPS25750D PD policy / CC / VCONN / PDO control\n\nCapture is blocked until: controller procurement/configuration, 5 A e-marked cable behaviour, converter\ntransition policy, VBUS protection, receptacle mechanics and component ratings are verified.\n\nDo not connect 24 V directly to VBUS. Do not connect a Dell PC before the electronic-load validation plan passes."
+		(exclude_from_sim no)
+		(at 46.99 58.42 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left top)
+		)
+		(uuid "2f16010e-660a-4147-93ea-c661c2e3e8f4")
+	)
+	(text "Next native source: reviewed circuit blocks, ERC-clean schematic, then 4-layer PCB and STEP fit export."
+		(exclude_from_sim no)
+		(at 46.99 128.27 0)
+		(effects
+			(font (size 1.27 1.27) (italic yes))
+			(justify left top)
+		)
+		(uuid "dd94d5d2-f72c-44e6-a647-f473f93b6d75")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

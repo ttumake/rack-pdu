@@ -1,0 +1,32 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*~
+.#*
+
+# Python cache from FreeCAD concept generator
+__pycache__/
+*.py[cod]
+
+# KiCad lock, autosave, rescue, local settings, and generated outputs
+*.lck
+~*.kicad_sch
+~*.kicad_pcb
+*.kicad_prl
+*.kicad_pro-bak
+*-backups/
+fp-info-cache
+
+# FreeCAD temporary/backup files
+*.FCStd1
+*.FCStd2
+*.FCStd~
+*.FCBak
+
+# Generated exports: retain directory markers and release artifacts explicitly
+exports/fabrication/*
+!exports/fabrication/.gitkeep
+exports/preview/*
+!exports/preview/.gitkeep

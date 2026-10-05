@@ -1,0 +1,17 @@
+{
+  "board": {},
+  "cvpcb": {},
+  "erc": {},
+  "libraries": {},
+  "meta": {
+    "filename": "port-prototype.kicad_pro",
+    "version": 1
+  },
+  "net_settings": {},
+  "pcbnew": {},
+  "schematic": {},
+  "text_variables": {
+    "PROJECT_STATUS": "CONCEPTUAL — NOT FOR FABRICATION",
+    "ARCHITECTURE": "TPS25750D + external 24 V adjustable buck, pending qualification"
+  }
+}
